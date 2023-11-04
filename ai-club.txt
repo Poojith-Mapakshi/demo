@@ -1,2 +1,136 @@
-sncbjdbc
-sfjkhef
+
+$ git config --global user.name "poojith"
+
+
+$ git config --global user.email poojithmapakshi@gmail.com
+
+
+$ cd d:
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d
+$ mkdir git-test
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d
+$ cd git-test/
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test
+$ git init
+Initialized empty Git repository in D:/git-test/.git/
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ ls
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git config --global user.name "Poojith-Mapakshi"
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git config --global user.email poojithmapakshi@gmail.com
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git init .
+Reinitialized existing Git repository in D:/git-test/.git/
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ ls
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ ls
+ai-club.txt
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git add .
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git commit -m "added files"
+[master (root-commit) ecde8f7] added files
+ 1 file changed, 2 insertions(+)
+ create mode 100644 ai-club.txt
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git remote add origin https://github.com/Poojith-Mapakshi/demo.git
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git commit -m "added files"
+On branch master
+nothing to commit, working tree clean
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ ^C
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 119.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Poojith-Mapakshi/demo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git push origin master
+Everything up-to-date
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git log
+commit ecde8f72247a7539b67e363b4889bc8dca964cae (HEAD -> master, origin/master)
+Author: Poojith-Mapakshi <poojithmapakshi@gmail.com>
+Date:   Sat Nov 4 11:07:31 2023 +0530
+
+    added files
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ ls
+ai-club.txt  demo.txt
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git add demo.txt
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git commit "added demo file "
+error: pathspec 'added demo file ' did not match any file(s) known to git
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git commit -m "added demo file "
+[master 3f254a4] added demo file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 150.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Poojith-Mapakshi/demo.git
+   ecde8f7..3f254a4  master -> master
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+revan@LAPTOP-RSD0HKV3 MINGW64 /d/git-test (master)
+$ git config --global user.name "poojith"
